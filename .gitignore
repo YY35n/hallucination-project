@@ -1,0 +1,10 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# local backup of the report (not for sharing)
+Progress_Report_Hallucination_BACKUP.docx

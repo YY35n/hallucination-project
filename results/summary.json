@@ -1,0 +1,131 @@
+{
+  "n": 100,
+  "model": "qwen2.5:3b",
+  "k": 5,
+  "question_stats": {
+    "total_dev": 3610,
+    "after_filter": 3559,
+    "dropped": {
+      "time-sensitive": 49,
+      "yes/no": 2
+    },
+    "sampled": 100
+  },
+  "corpus": {
+    "pages": 287,
+    "passages": 14762,
+    "built": "2026-11-06",
+    "build_seconds": 2284.9
+  },
+  "conditions": {
+    "A": {
+      "correct": 14,
+      "incorrect": 84,
+      "abstain": 2,
+      "correct_pct": 14.0,
+      "incorrect_pct": 84.0,
+      "abstain_pct": 2.0,
+      "selective_acc": 14.285714285714286,
+      "calls_per_q": 1.0,
+      "tokens_per_q": 66.63,
+      "retrieval_ms_per_q": 0
+    },
+    "B": {
+      "correct": 9,
+      "incorrect": 14,
+      "abstain": 77,
+      "correct_pct": 9.0,
+      "incorrect_pct": 14.0,
+      "abstain_pct": 77.0,
+      "selective_acc": 39.130434782608695,
+      "calls_per_q": 1.0,
+      "tokens_per_q": 82.38,
+      "retrieval_ms_per_q": 0
+    },
+    "C": {
+      "correct": 18,
+      "incorrect": 28,
+      "abstain": 54,
+      "correct_pct": 18.0,
+      "incorrect_pct": 28.0,
+      "abstain_pct": 54.0,
+      "selective_acc": 39.130434782608695,
+      "calls_per_q": 1.0,
+      "tokens_per_q": 837.66,
+      "retrieval_ms_per_q": 35.03136700368486
+    },
+    "D": {
+      "correct": 16,
+      "incorrect": 27,
+      "abstain": 57,
+      "correct_pct": 16.0,
+      "incorrect_pct": 27.0,
+      "abstain_pct": 57.0,
+      "selective_acc": 37.2093023255814,
+      "calls_per_q": 2.0,
+      "tokens_per_q": 1818.47,
+      "retrieval_ms_per_q": 35.03136700368486
+    }
+  },
+  "recall_at_k": 33.0,
+  "checker": {
+    "incorrect": {
+      "keep": 10,
+      "corrected_wrong": 13,
+      "withdraw": 5
+    },
+    "abstain": {
+      "withdraw": 51,
+      "corrected_wrong": 2,
+      "keep": 1
+    },
+    "correct": {
+      "corrected_right": 6,
+      "corrected_wrong": 2,
+      "keep": 10
+    }
+  },
+  "checker_unparsed": 0,
+  "C_incorrect_gold_missing": 22,
+  "D_incorrect_gold_missing": 21,
+  "B_abstain_where_A_correct": 6,
+  "D_withdrew_correct_gold_missing": 0,
+  "ci": {
+    "A->B": {
+      "correct": [
+        -5.0,
+        -10.0,
+        0.0
+      ],
+      "incorrect": [
+        -70.0,
+        -78.0,
+        -61.0
+      ]
+    },
+    "B->C": {
+      "correct": [
+        9.0,
+        1.0,
+        17.0
+      ],
+      "incorrect": [
+        14.0,
+        4.0,
+        24.0
+      ]
+    },
+    "C->D": {
+      "correct": [
+        -2.0,
+        -5.0,
+        0.0
+      ],
+      "incorrect": [
+        -1.0,
+        -7.000000000000001,
+        5.0
+      ]
+    }
+  }
+}
